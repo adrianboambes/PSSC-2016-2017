@@ -1,0 +1,50 @@
+﻿@model IEnumerable<University.Models.StudyYear.Student>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<input type="button" class="students-create-view-button" value="Add Student" onclick="location.href = '@Url.Action("Add", "Student")'"/>
+<input type="button" class="school-subjects-list-button" value="School subjects" onclick="location.href = '@Url.Action("GetAllSchoolSubjects", "StudyYear")'" />
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RegistrationNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Credits)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegistrationNumber.UniqueId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Credits._credits)
+            </td>
+            <td>
+                <input type="button" value="Edit" class="edit-student-btn" onclick="studentModule.editStudentGet('@item.RegistrationNumber.UniqueId')"/>
+                @Html.ActionLink("Details", "Details", new {id = item.RegistrationNumber.UniqueId}) |
+                @Html.ActionLink("Delete", "Delete", new {id = item.RegistrationNumber.UniqueId})
+            </td>
+        </tr>
+    }
+
+</table>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/studentScript")
+}

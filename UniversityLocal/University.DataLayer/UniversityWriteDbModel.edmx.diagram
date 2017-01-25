@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b2b4218f93884861872d17eda7c8db85" Name="Diagram1">
+        <EntityTypeShape EntityType="UNIVERSITYModel.Courses" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="UNIVERSITYModel.Deanships" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="UNIVERSITYModel.Faculties" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="UNIVERSITYModel.Majors" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="UNIVERSITYModel.SchoolSubjects" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="UNIVERSITYModel.Students" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="UNIVERSITYModel.Teachers" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="UNIVERSITYModel.Laboratories" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="UNIVERSITYModel.StudentSituation" Width="1.5" PointX="6.375" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
